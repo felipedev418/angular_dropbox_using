@@ -1,0 +1,61 @@
+.page-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.storage-container {
+}
+.sidebar {
+  /*width: 15%;
+  background-color: #444a64;*/
+  background: linear-gradient(#444a64,#000000e6);
+  height: 100%;
+  width: 160px; 
+  position: fixed; 
+  z-index: 999; 
+  top: 0; 
+  left: 0;
+  overflow-x: hidden; 
+  padding-top: 20px;
+  display: flex;
+}
+.nav {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+.nav-bar-brand {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.nav-link {
+  color: #ffffffe6;
+}
+.nav-link:hover {
+  color: blue;
+}
+.nav-item {
+  margin-left: 20%;
+}
+a i {
+  padding: 0;
+}
+.fa-star {
+  margin-left: -3px;
+}
+
+.fa-dropbox {
+  color: /*#787878*/#00b3fe;
+  padding: 15px 0;
+
+}
+.main {
+  width: 100%;
+  margin-left: 160px;
+}
+
+.webhook-container {
+  width: 100%;
+  height: 40px;
+}

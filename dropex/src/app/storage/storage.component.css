@@ -1,0 +1,99 @@
+i,
+.thumbnail {
+  margin-right: 15px;
+}
+td a,
+td a:link a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+td div {
+  white-space: no-wrap;
+  
+}
+
+.table thead th {
+  border-top: none;
+  padding-bottom: 3px;
+  padding-top: 1.5rem;
+  font-weight: bolder;
+}
+table a,
+table i {
+  vertical-align: middle;
+  word-break: break-all; /* Added by K */
+
+}
+.table {
+  width: 70%; /* will come back */
+  color: #5d5858;
+  background-color: /*#f9f9f9 #fcfcfc66*/ #fff6;
+}
+tbody > tr:hover {
+  background-color: #ebf3f61a;
+}
+.fa-folder {
+  color: #00aeff99;
+}
+
+.col-sm {
+  border-bottom: 1px solid #80808080;
+  padding: 15px;
+}
+tr .fav {
+  margin-left: 5px;
+  vertical-align: middle;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+tr:hover .fav {
+  opacity: 1;
+}
+.starred {
+  margin-left: 5px;
+  vertical-align: middle;
+  color: blue;
+  opacity: 1;
+}
+.spaceInfo {
+  width: 20%;
+  font-size: 12px;
+}
+.light-grey {
+  height: 10px;
+  width: 100%;
+  border: 1px solid #80808033;
+}
+.blue {
+  background-color: blue;
+  height: 9px;
+}
+.sp {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastsearch {
+  margin-top: 40px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.24);
+  box-shadow: 0 1px 2px grey;
+  word-break: break-all; /* Added by K */
+}
+.lastsearch table, .lastsearch p {
+  margin: 5px auto;
+  font-size: 14px;
+  word-break: break-all;
+}
+.lastsearch table {
+  width: 90%;
+  color: #5d5858;
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

@@ -1,0 +1,11 @@
+<div class="dropdown show">
+  <a (click)="dropDown = !dropDown">...</a>
+  <div *ngIf="dropDown" class="dropdown-menu">
+    <a (click)="delete($event)" class="dropdown-item">
+      <i class="far fa-trash-alt"></i>
+    </a>
+    <a class="dropdown-item" (click)="download($event)">
+      <i class="fas fa-download"></i>
+    </a>
+  </div>
+</div>

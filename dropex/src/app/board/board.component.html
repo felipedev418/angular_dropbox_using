@@ -1,0 +1,60 @@
+<ng-template *ngIf="!dbxAuth.isAuth; then thenBlock; else elseBlock">
+</ng-template>
+
+
+
+<ng-template #thenBlock>
+  <a routerLink="/auth" routerLinkActive="active">Go to Auth</a>
+</ng-template>
+
+<ng-template #elseBlock>
+  <div class="page-container">
+    <div class="sidebar">
+      <ul class="nav">
+        <li class="nav-bar-brand">
+          <a routerLink="">
+            <i class="fab fa-dropbox fa-3x"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="" class="nav-link active" routerLinkActive="active" (click)="showHome($event)">
+            <i class="far fa-file"></i>
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link" routerLink="/stars" href="?status=favo"> Deleted by K -->
+          <a class="nav-link" routerLink="./" (click)="showFavorites($event)">
+            <!-- K added -->
+            <i class="far fa-star"></i>
+            Starred
+          </a>
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link" routerLink="/logout:now">
+            <!--- removed ! sign, by Kenneth 'Kuken' Nilsson -->
+            <i class="fas fa-sign-out-alt"></i>
+            Sign out
+          </a>
+        </li>
+        <li class="nav-item">
+          <!--- added by Kenneth 'Kuken' Nilsson -->
+          <a class="nav-link" routerLink="./" (click)="showDeletes($event)">
+            <i class="far fa-trash-alt"></i>
+            Deleted
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="webhook-container">
+        <app-webhooks></app-webhooks>
+      </div>
+      <div class="storage-container">
+        <app-storage></app-storage>
+      </div>
+    </div>
+
+  </div>
+</ng-template>

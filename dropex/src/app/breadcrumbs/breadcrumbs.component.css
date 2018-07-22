@@ -1,0 +1,12 @@
+.breadcrumbs{
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a span {
+  padding:0 5px;
+  color: black;
+}

@@ -1,0 +1,12 @@
+
+<div class="box">
+    <i class="fab fa-dropbox fa-3x"></i>
+    <button
+    class="btn btn-primary" 
+    type="button"
+    (click)="handleAuthorization()"
+    [disabled]="dbxAuth.accessToken"
+    >
+        Authorize me!
+    </button>
+</div>

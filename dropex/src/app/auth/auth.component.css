@@ -1,0 +1,11 @@
+.box {
+  padding: 15px;
+  width: 200px;
+  margin:10% auto;
+  position: relative;
+  border: thin solid #cbcbcb;border-radius: 5px;
+  text-align: center;
+}
+i {
+  margin-bottom: 10px;
+}

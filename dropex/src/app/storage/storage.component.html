@@ -1,0 +1,124 @@
+<div class="container">
+  <div class="sp">
+    <app-breadcrumbs></app-breadcrumbs>
+    <div class="spaceInfo">
+      <div class="light-grey">
+        <div class="blue" [ngStyle]="{width: spacePercentage + '%'}"></div>
+      </div>
+      {{usedSpace}} Gb / {{storageSpace}} Gb
+    </div>
+  </div>
+
+  <div class="sp">
+    <div style="width: 40%;">
+      <app-search></app-search>
+    </div>
+    <app-upload></app-upload>
+  </div>
+
+  <div class="main-content">
+    <table class="table">
+      <thead>
+        <div *ngIf="inEntries.length < 1">
+          This folder is empty...
+        </div>
+        <tr>
+          <th>Name</th>
+          <th>Last Modified</th>
+          <th>Size</th>
+          <th>
+            <i class="fas fa-list-ul"></i>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of inEntries">
+          <ng-template *ngIf="item['.tag'] === 'folder';then thenBlock; else elseBlock"></ng-template>
+
+          <ng-template #thenBlock>
+            <td>
+              <div>
+                <i class="fas fa-folder fa-2x"></i>
+                <a routerLink="/{{item.path_lower}}" routerLinkActive="active">{{ item.name }}</a>
+                <span *ngIf="!item.starred" class="fav" [id]="item.id" (click)="addStar(item.id, $event)">
+                  &#9733;
+                </span>
+                <span *ngIf="item.starred" [id]="item.id" (click)="delStar(item.id, $event)" class="starred">
+                  &#9733;
+                </span>
+              </div>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div>
+                <app-delete [path]="item.path_lower" [filename]="item.name"></app-delete>
+              </div>
+            </td>
+          </ng-template>
+
+          <ng-template #elseBlock>
+            <td>
+              <div>
+                <img *ngIf="isImage(item.path_lower)" alt="bild" width="32" height="32" [id]="item.path_lower" class="thumbnail">
+                <i *ngIf="!isImage(item.name)" [ngClass]="getFileType(item.name)"></i>
+                <a (click)="downloadFile(item.path_lower, item.name, $event)" href="">
+                  <span>{{ item.name }}</span>
+                </a>
+                <span *ngIf="!item.starred" class="fav" [id]="item.id" (click)="addStar(item.id, $event)">
+                  &#9733;
+                </span>
+                <span *ngIf="item.starred" [id]="item.id" (click)="delStar(item.id, $event)" class="starred">
+                  &#9733;
+                </span>
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>{{ item.client_modified | date:'yyyy-MM-dd HH:mm' }}</span>
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>{{ item.size | fileSize }}</span>
+              </div>
+            </td>
+            <td>
+              <div>
+                <app-delete [path]="item.path_lower" [filename]="item.name"></app-delete>
+              </div>
+            </td>
+          </ng-template>
+        </tr>
+      </tbody>
+    </table>
+
+    <table style="width: 200px;">
+      <tr>
+        <td>
+          <div *ngIf="lastSearch.length > 0" class="lastsearch">
+            <p>Your last searches</p>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    <i class="fas fa-search"></i> {{ lastSearch[0].searchterm }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of lastSearch">
+                  <td class="">{{ item.name }}</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+

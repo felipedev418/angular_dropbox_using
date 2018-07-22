@@ -1,0 +1,16 @@
+<div class="breadcrumbs">
+  <ul>
+    <li>
+      <a routerLink="">{{ '' ? 'Home' : ''}}<i class="fas fa-home"></i></a>
+      <a *ngFor="let path of pathArray" routerLink="/{{path.fullpath}}" routerLinkActive="active">{{path.path}} <span>/</span></a>
+      <a *ngIf="parentFolder.length > 0" routerLink="/{{ parentFolder[parentFolder.length - 1].fullpath }}" routerLinkActive="active">
+          <i class="fas fa-level-up-alt"></i>
+        </a>
+    </li>
+    <!-- <li>
+      <a *ngIf="parentFolder.length > 0" routerLink="/{{ parentFolder[parentFolder.length - 1].fullpath }}" routerLinkActive="active">
+        Up
+      </a>
+    </li> -->
+  </ul>
+</div>

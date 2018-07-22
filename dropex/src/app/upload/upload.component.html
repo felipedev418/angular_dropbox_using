@@ -1,0 +1,14 @@
+
+
+<!-- <section class="container main">
+    <p>Welcome to the <code>fileuploader.</code> Choose which [<a href="http://dropbox.github.io/dropbox-sdk-js/Dropbox.html#filesUpload">documents</a>] you want to upload.</p>
+ -->
+ <div class="uploadContainer">
+   <form #form="ngForm" class="form-group">
+     <div class="fileContainer">
+       Upload       
+       <input type="file" id="file-upload" name="upload " (change)="storeFiles($event.target.files)" [(ngModel)]="filename.name"  />
+     </div>
+<!--      <button type="submit" (click)="upload()">Submit</button>
+ -->   </form>
+ </div>

@@ -1,0 +1,24 @@
+
+<div class="searchContainer">
+  <form #form="ngForm" class="form-group">
+    <!-- <label for="search">Search</label> -->
+    <div class="input-group">
+      <input class="form-control"
+             type="text" 
+             name="search" 
+             placeholder="Search" 
+             required 
+             minlength="1"
+             [(ngModel)]="query">
+      <div class="input-group-append">
+        <button type="submit" 
+                (click)="search($event); form.reset()" 
+                [disabled]="!form.form.valid"
+                class="btn btn-outline-primary">
+                <i class="fas fa-search"></i></button>
+      </div>
+    </div>
+    </form>
+</div> 
+
+<div *ngIf="gotMatch"> {{'We found '+ matches + ' matches of your results' }}</div>
