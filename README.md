@@ -19,7 +19,7 @@ You may want to view about these things in this project:
 |dropex|Main codes|
 |webhooks| Using for creating cloud function|
 |deploy| Using for deploying your app
-* Run `npm install` in these folders `dropex` and `webhooks/functions`
+* Run `npm install` in these folders `/dropex` and `/webhooks/functions`
 * You need to change many configs in the file `/dropex/src/app/configs.ts` for this app. It include these things
    * Dropbox config
    * Firebase config
