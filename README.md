@@ -6,7 +6,7 @@
    * How about your personal information
    * Who we are
 * [Folder structure](#folder-structure)
-* [Using](https://github.com/nguyenkhois/angular-dropbox-explorer/blob/master/README.md#using)
+* [Using](#using)
    * Configuration
    * How you can deploy a cloud function on Google Cloud Platform
    * How you can deploy your app on Google Firebase Hosting
