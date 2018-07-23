@@ -1,6 +1,6 @@
 # Dropbox Explorer - DropEx
 * Introduction
-   * Screenshot
+   * Screenshot and online demo
    * What we used in this project
    * How it works
    * How about your personal information
@@ -27,6 +27,8 @@ You may want to view about these other things in this project:
 * [Google Cloud Platform](https://cloud.google.com/)
 
 ### Screenshot
+* [View online demo here](https://ecdropex.firebaseapp.com)
+
 ![Screenshot](assets/screenshot.png)
 
 ### What we used in this project
