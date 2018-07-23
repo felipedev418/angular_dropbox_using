@@ -1,9 +1,9 @@
 # Dropbox Explorer - DropEx
 * [Introduction](#introduction)
-   * Screenshot and online demo
-   * What we used in this project
-   * How it works
-   * How about your personal information
+   * [Screenshot and online demo](#screenshot)
+   * [What we used in this project](#what-we-used-in-this-project)
+   * [How it works](#how-it-works)
+   * [How about your personal information](#how-about-your-personal-information)
    * [Who we are](#who-we-are)
 * [Folder structure](#folder-structure)
 * [Using](#using)
