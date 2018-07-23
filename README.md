@@ -46,7 +46,7 @@ You may want to view about these other things in this project:
 We use OAuth 2 flow and Dropbox take care of all user verification process. ([View more about Dropbox verification process here](https://www.dropbox.com/developers/reference/oauth-guide))
 
 ### How about your personal information
-We do NOT read, save or collect your personal information and files on Dropbox. NOTHING ALL!
+We do NOT read, save or collect your personal information and files on Dropbox. NOTHING ALL and you are safe!
 
 ### Who we are
 We are a group and we learn about Angular as well as Dropbox API through this project. We would like to share knowledge for everyone else who wants to learn about front-end development.
