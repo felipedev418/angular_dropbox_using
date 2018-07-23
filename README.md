@@ -7,7 +7,7 @@
    * [Who we are](#who-we-are)
 * [Folder structure](#folder-structure)
 * [Using](#using)
-   * Configuration
+   * [Configuration](#configuration)
    * How you can deploy a cloud function on Google Cloud Platform
    * How you can deploy your app on Google Firebase Hosting
 * [References](#references)
