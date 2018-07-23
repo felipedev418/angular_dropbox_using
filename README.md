@@ -4,7 +4,7 @@
    * What we used in this project
    * How it works
    * How about your personal information
-   * Who we are
+   * [Who we are](#who-we-are)
 * [Folder structure](#folder-structure)
 * [Using](#using)
    * Configuration
