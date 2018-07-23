@@ -1,16 +1,16 @@
 # Dropbox Explorer - DropEx
-* Introduction
+* [Introduction](https://github.com/nguyenkhois/angular-dropbox-explorer/blob/master/README.md#introduction)
    * Screenshot and online demo
    * What we used in this project
    * How it works
    * How about your personal information
    * Who we are
-* Folder structure
-* Using
+* [Folder structure](https://github.com/nguyenkhois/angular-dropbox-explorer/blob/master/README.md#folder-structure)
+* [Using](https://github.com/nguyenkhois/angular-dropbox-explorer/blob/master/README.md#using)
    * Configuration
    * How you can deploy a cloud function on Google Cloud Platform
    * How you can deploy your app on Google Firebase Hosting
-* References
+* [References](https://github.com/nguyenkhois/angular-dropbox-explorer/blob/master/README.md#references)
    * Guides
    * Tips
 
