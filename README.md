@@ -1,16 +1,16 @@
 # Dropbox Explorer - DropEx
-* [Introduction](https://github.com/nguyenkhois/angular-dropbox-explorer/blob/master/README.md#introduction)
-   * Screenshot and online demo
-   * What we used in this project
-   * How it works
-   * How about your personal information
-   * Who we are
-* [Folder structure](https://github.com/nguyenkhois/angular-dropbox-explorer/blob/master/README.md#folder-structure)
-* [Using](https://github.com/nguyenkhois/angular-dropbox-explorer/blob/master/README.md#using)
-   * Configuration
-   * [How you can deploy your Google Cloud Functions](https://medium.com/@khoiles/create-and-deploy-your-first-cloud-function-for-firebase-17eabc23a591)
+* [Introduction](#introduction)
+   * [Screenshot and online demo](#screenshot)
+   * [What we used in this project](#what-we-used-in-this-project)
+   * [How it works](#how-it-works)
+   * [How about your personal information](#how-about-your-personal-information)
+   * [Who we are](#who-we-are)
+* [Folder structure](#folder-structure)
+* [Using](#using)
+   * [Configuration](#configuration)
+   * [How you can deploy a function on Google Cloud Platform](https://medium.com/@khoiles/create-and-deploy-your-first-cloud-function-for-firebase-17eabc23a591)
    * How you can deploy your app on Google Firebase Hosting
-* [References](https://github.com/nguyenkhois/angular-dropbox-explorer/blob/master/README.md#references)
+* [References](#references)
    * Guides
    * Tips
 
@@ -46,7 +46,7 @@ You may want to view about these other things in this project:
 We use OAuth 2 flow and Dropbox take care of all user verification process. ([View more about Dropbox verification process here](https://www.dropbox.com/developers/reference/oauth-guide))
 
 ### How about your personal information
-We do NOT read, save or collect your personal information and files on Dropbox. NOTHING ALL!
+We do NOT read, save or collect your personal information and files on Dropbox. NOTHING ALL and you are safe!
 
 ### Who we are
 We are a group and we learn about Angular as well as Dropbox API through this project. We would like to share knowledge for everyone else who wants to learn about front-end development.
