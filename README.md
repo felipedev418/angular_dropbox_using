@@ -8,7 +8,7 @@
 * [Folder structure](https://github.com/nguyenkhois/angular-dropbox-explorer/blob/master/README.md#folder-structure)
 * [Using](https://github.com/nguyenkhois/angular-dropbox-explorer/blob/master/README.md#using)
    * Configuration
-   * How you can deploy a cloud function on Google Cloud Platform
+   * [How you can deploy your Google Cloud Functions](https://medium.com/@khoiles/create-and-deploy-your-first-cloud-function-for-firebase-17eabc23a591)
    * How you can deploy your app on Google Firebase Hosting
 * [References](https://github.com/nguyenkhois/angular-dropbox-explorer/blob/master/README.md#references)
    * Guides
